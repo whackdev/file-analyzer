@@ -1,0 +1,21 @@
+{
+  "name": "file-analyzer",
+  "version": "1.0.0",
+  "description": "Simple form that accepts a file and returns its size in bytes in json response.",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon index.js"
+  },
+  "repository": "https://github.com/whackdev/file-analyzer.git",
+  "author": "Nick <whackdev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "multer": "^1.3.0"
+  }
+}
