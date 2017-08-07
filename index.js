@@ -5,12 +5,12 @@ if (process.env.NODE_ENV !== 'production') {
 const PORT = process.env.PORT || 3000;
 const express = require('express');
 const routes = require('./src/routes/index');
+const path = require('path');
 
 const app = express();
 
-app.set ('views', 'views');
-app.set('view engine', 'ejs');
-app.set('html', require('ejs'));
+app.set ('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
 app.use('/', routes);
 

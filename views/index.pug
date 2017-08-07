@@ -1,0 +1,10 @@
+doctype html
+head
+	title="File Size Analyzer"
+body
+block content
+	h1="File Size Anayler"
+	p="Submit a file to get its size"
+	form(method="post", enctype='multipart/form-data')
+		input(type='file', name='fileUpload')
+		input(type='submit', name='uploadFile', value='Submit')
